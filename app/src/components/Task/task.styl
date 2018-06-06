@@ -1,0 +1,28 @@
+.task
+	background-color: #fff
+	border-radius: 0.3em
+	border: none
+	margin: 0.5em 0
+	padding: 1em
+	font-size: 1.2em
+
+	&-label
+		margin-left: 0.5em
+
+	&--fav
+		background: linear-gradient(#fff8d1, #fff09e)
+
+	&--fav &-star
+		fill: gold
+
+	&-star
+	&-trash
+		float: right
+		cursor: pointer
+		margin-left: 0.5em
+		&:hover
+			fill: red
+
+	&--done
+		opacity: 0.5
+		text-decoration: line-through
